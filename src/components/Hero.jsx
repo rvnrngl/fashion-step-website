@@ -1,8 +1,24 @@
-import React from "react";
-import Typed from "react-typed";
+import Typed from "typed.js";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import { useEffect, useRef } from "react";
 
 const Hero = () => {
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["FASHION.", "CARE."],
+      typeSpeed: 120,
+      backSpeed: 120,
+      backDelay: 1000,
+      loop: true,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
   return (
     <>
       <div id="home">
@@ -18,12 +34,9 @@ const Hero = () => {
             <p className="text-lg sm:text-xl md:text-3xl py-4 font-bold">
               Shoes designed with
             </p>
-            <Typed
+            <span
+              ref={el}
               className="text-xl sm:text2xl md:text-4xl font-bold text-orange-400 uppercase"
-              strings={["fashion.", "Care."]}
-              typeSpeed={150}
-              backSpeed={150}
-              loop
             />
           </div>
           <p className="text-lg md:text-2xl font-bold py-4 text-gray-600">
