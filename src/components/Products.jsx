@@ -9,7 +9,7 @@ const Products = () => {
   };
   return (
     <>
-      <div className="w-full bg-white text-[#000300] py-10 px-4">
+      <div id="products" className="w-full bg-white text-[#000300] py-10 px-4">
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
           <div className="w-[270px] sm:w-[300px] lg:w-[400px] mx-auto my-4 border-2 rounded-md overflow-hidden border-gray-500">
             <SliderProducts handleChange={handleChange} />

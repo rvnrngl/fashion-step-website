@@ -22,22 +22,22 @@ const NavBar = () => {
             </a>
           </li>
           <li>
-            <a href="#" className="p-4">
+            <a href="#products" className="p-4">
               Products
             </a>
           </li>
           <li>
-            <a href="#" className="p-4">
+            <a href="#gallery" className="p-4">
+              Gallery
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="p-4">
               About
             </a>
           </li>
           <li>
-            <a href="#" className="p-4">
-              Pricing
-            </a>
-          </li>
-          <li>
-            <a href="#" className="p-4">
+            <a href="#contact" className="p-4">
               Contact
             </a>
           </li>
@@ -58,19 +58,19 @@ const NavBar = () => {
           </h1>
           <ul className="pt-4 uppercase">
             <li className="p-4 border-b border-b-gray-600">
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li className="p-4 border-b border-b-gray-600">
-              <a href="#">Products</a>
+              <a href="#products">Products</a>
             </li>
             <li className="p-4 border-b border-b-gray-600">
-              <a href="#">About</a>
+              <a href="#gallery">Gallery</a>
             </li>
             <li className="p-4 border-b border-b-gray-600">
-              <a href="#">Pricing</a>
+              <a href="#about">About</a>
             </li>
             <li className="p-4 border-b border-b-gray-600">
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
