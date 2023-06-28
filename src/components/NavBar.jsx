@@ -58,22 +58,38 @@ const NavBar = () => {
           </h1>
           <ul className="pt-4 uppercase">
             <li className="p-4 border-b border-b-gray-600">
-              <a href="#home">Home</a>
+              <a href="#home" onClick={handleNav}>
+                Home
+              </a>
             </li>
             <li className="p-4 border-b border-b-gray-600">
-              <a href="#products">Products</a>
+              <a href="#products" onClick={handleNav}>
+                Products
+              </a>
             </li>
             <li className="p-4 border-b border-b-gray-600">
-              <a href="#gallery">Gallery</a>
+              <a href="#gallery" onClick={handleNav}>
+                Gallery
+              </a>
             </li>
             <li className="p-4 border-b border-b-gray-600">
-              <a href="#about">About</a>
+              <a href="#about" onClick={handleNav}>
+                About
+              </a>
             </li>
             <li className="p-4 border-b border-b-gray-600">
-              <a href="#contact">Contact</a>
+              <a href="#contact" onClick={handleNav}>
+                Contact
+              </a>
             </li>
           </ul>
         </div>
+        {/* <div
+          onClick={handleNav}
+          className={
+            !navClose ? "fixed h-full w-[40%] right-0 bg-transparent" : "hidden"
+          }
+        ></div> */}
       </nav>
     </>
   );

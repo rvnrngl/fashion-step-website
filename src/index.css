@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  background: #000300;
+  color: white;
+  display: none;
+}
+
 body {
   background: #000300;
   color: white;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
 }
