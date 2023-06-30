@@ -17,28 +17,44 @@ const NavBar = () => {
         {/* Navbar for tablets and laptops */}
         <ul className="hidden md:flex">
           <li>
-            <a href="#home" className="p-4">
+            <a
+              href="#home"
+              className="p-4 hover:text-orange-400 duration-300 ease-in-out"
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#products" className="p-4">
+            <a
+              href="#products"
+              className="p-4 hover:text-orange-400 duration-300 ease-in-out"
+            >
               Products
             </a>
           </li>
           <li>
-            <a href="#gallery" className="p-4">
+            <a
+              href="#gallery"
+              className="p-4 hover:text-orange-400 duration-300 ease-in-out"
+            >
               Gallery
             </a>
           </li>
           <li>
-            <a href="#contact" className="p-4">
+            <a
+              href="#contact"
+              className="p-4 hover:text-orange-400 duration-300 ease-in-out"
+            >
               Contact
             </a>
           </li>
         </ul>
         <div onClick={handleNav} className="block md:hidden">
-          {!navClose ? <CgClose size={30} /> : <CgMenuRightAlt size={30} />}
+          {!navClose ? (
+            <CgClose size={30} className="text-orange-400" />
+          ) : (
+            <CgMenuRightAlt size={30} />
+          )}
         </div>
         {/* Navbar for mobile devices */}
         <div

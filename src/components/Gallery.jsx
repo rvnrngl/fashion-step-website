@@ -37,6 +37,7 @@ const Gallery = () => {
                   src={image.src}
                   style={{ width: "100%", display: "block" }}
                   alt={image.name}
+                  className="duration-300 ease-in-out group-hover:scale-110"
                 />
                 <div
                   className="absolute bottom-0 left-0 w-full p-3 bg-gradient-to-t from-[#000300] from-5% to-transparent 

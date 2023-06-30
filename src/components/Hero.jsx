@@ -39,7 +39,7 @@ const Hero = () => {
               className="text-xl sm:text2xl md:text-4xl font-bold text-orange-400 uppercase"
             />
           </div>
-          <p className="text-lg md:text-2xl font-bold py-4 text-gray-600">
+          <p className="text-lg md:text-2xl font-bold py-4 text-gray-600 hover:text-white duration-300 ease-in-out">
             Your feet will never feel the same again.
           </p>
           <button className="bg-orange-400 w-[200px] text-[#000300] mt-4 p-2 md:p-3 text-xl md:text-2xl font-bold rounded-md inline-flex items-center justify-center group">
