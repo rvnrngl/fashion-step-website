@@ -2,7 +2,7 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Products from "./components/Products";
 import Gallery from "./components/Gallery";
-import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Hero />
       <Products />
       <Gallery />
-      <About />
+      <Contact />
     </>
   );
 }

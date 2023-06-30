@@ -62,7 +62,7 @@ const Gallery = () => {
             <img
               src={selectedImage}
               alt="Image"
-              className="w-[80%] sm:w-auto sm:h-[70%] aspect-auto absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 z-30"
+              className="w-[80%] sm:w-auto sm:h-[70%] aspect-auto absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 md:top-16 md:translate-y-0 z-30"
             />
           </div>
         </div>

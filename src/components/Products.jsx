@@ -4,8 +4,12 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Products = () => {
   const [product, setProduct] = useState("Snickers");
-  const handleChange = (newProduct) => {
+  const [description, setDescription] = useState(
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, soluta nulla ullam atque dolorem quia vel quisquam similique sunt, dignissimos reiciendis fugiat, nemo incidunt natus veritatis inventore totam voluptas ex!"
+  );
+  const handleChange = (newProduct, newDescription) => {
     setProduct(newProduct);
+    setDescription(newDescription);
   };
   return (
     <>
@@ -22,11 +26,7 @@ const Products = () => {
               {product}
             </h1>
             <p className="text-justify mb-4 max-w-[450px] border-t border-b">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi,
-              molestias distinctio, sapiente laudantium porro consectetur
-              aliquid praesentium repellat aliquam expedita eligendi atque
-              officia, qui nihil reprehenderit amet perferendis explicabo
-              temporibus!
+              {description}
             </p>
             <button className="bg-[#000300] text-white w-[200px] p-2 md:p-3 text-xl md:text-2xl font-bold rounded-md inline-flex items-center justify-center group">
               <p className="transition ease-in-out duration-300 group-hover:transform group-hover:translate-x-[-15px]">
