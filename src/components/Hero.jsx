@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <>
       <div id="home">
-        <div className="h-screen w-full max-w-[800px] flex flex-col px-4 justify-center items-center text-center mx-auto">
+        <div className="h-[calc(100vh_-_95px)] w-full max-w-[800px] flex flex-col px-4 justify-center items-center text-center mx-auto">
           <p className=" text-orange-400 font-bold text-md sm:text-xl md:text-3xl p-2">
             "Good shoes take you good places.”
           </p>
